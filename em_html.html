@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paldron: EM Redaction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(75, 65, 90); /* Updated background color */
+            color: rgb(255, 153, 0); /* Updated font color */
+        }
+        header {
+            background-color: rgb(75, 65, 90); /* Updated header background color */
+            color: rgb(255, 153, 0); /* Updated header font color */
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        img {
+            width: 150px;
+        }
+        .input-container {
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: rgb(75, 65, 90); /* Updated button background color */
+            color: rgb(255, 153, 0); /* Updated button font color */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: rgb(60, 50, 80); /* Slightly darker on hover */
+        }
+        canvas {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="mylog.png" alt="Logo">
+        <h1>Paldron: EM Redaction</h1>
+    </header>
+
+    <div class="input-container">
+        <input type="text" id="allowedWords" placeholder="Enter words to NOT redact (comma-separated)" />
+        <button id="startWebcam">Start Webcam</button>
+        <button id="stopWebcam">Stop Webcam</button>
+    </div>
+
+    <video id="webca
